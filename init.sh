@@ -1,6 +1,6 @@
 #!/usr.bin/env bash
 apt update
-apt install -y python sudo
+apt install -y ansible sudo
 useradd -m -u 2000 -s /bin/bash ansible
 echo "set ansible password"
 passwd ansible
