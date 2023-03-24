@@ -1,0 +1,12 @@
+ipv4:
+  address: 192.168.59.10
+  networkaddress: 192.168.59.0
+  subnetmask: 255.255.255.0
+  prefix: 24
+
+interface:
+  lan: enp0s8
+
+dnsmasq:
+  dhcp:
+    range: "192.168.59.200, 192.168.59.240, 12h"

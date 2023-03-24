@@ -1,0 +1,6 @@
+all:
+  children:
+    localmachine:
+      hosts:
+        rpi_k3s:
+          ansible_connection: local

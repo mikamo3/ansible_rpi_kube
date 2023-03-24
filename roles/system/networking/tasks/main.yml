@@ -1,0 +1,11 @@
+---
+- block:
+    - name: configure
+      template:
+        src: "lan.j2"
+        dest: "/etc/network/interfaces.d/lan"
+        mode: "0644"
+
+  tags:
+    - service
+    - networkd

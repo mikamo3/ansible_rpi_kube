@@ -1,0 +1,19 @@
+---
+- block:
+    - name: install
+      apt:
+        name: dnsmasq
+    - name: configure
+      template:
+        src: "dnsmasq.conf.j2"
+        dest: "/etc/dnsmasq.conf"
+        mode: "0644"
+    - name: enable
+      systemd:
+        name: dnsmasq
+        enabled: yes
+  tags:
+    - service
+    - dnsmasq
+    - dns
+    - dhcp

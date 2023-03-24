@@ -1,0 +1,13 @@
+---
+- name: k3s
+  hosts:
+    - all
+  gather_facts: true
+  remote_user: ansible
+  become: true
+  roles:
+    - role: system/host
+    - role: system/networking
+    - role: system/forwarding
+    - role: service/dnsmasq
+    - role: service/k3s

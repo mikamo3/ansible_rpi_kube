@@ -1,0 +1,5 @@
+---
+all:
+  hosts:
+    rpi_k3s_dev:
+      ansible_host: 192.168.59.10
